@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio de comunicación</title>
+    <link rel="reset" href="Pages/reset.css">
+    <link rel="stylesheet" href="Pages/style.css">
+    <!-- No sé si está bien enlazado el reset y tampoco entiendo bien cómo configurarlo pero voy a aseguir intentando -->
+  </head>
+
+  <body>
+
+    <img src="Images/Logo.png" alt="log1">
+    <!-- Estos botones dinámicos me deberían quedar al lado del logo pero no pude hacerlo, no sé qué me faltó -->
+    <!-- Al lado del menú debería ir un movimiento de línea de noticias pero todavía no sé cómo hacerlo -->
+    <ul class="list">
+      <li><a href="https://espectarama.blogspot.com/">Espectáculos</a></li>
+      <li><a href="https://eldeportivonoticias.blogspot.com/">Deportes</a></li>
+      <li><a href="https://ojodehalconnoticias.blogspot.com/">Política</a></li>
+      <li><a href="https://lamazmorradelfreaaak.blogspot.com/">Geek</a></li>
+      <li><a href="https://teloresumoconesteticaaa.blogspot.com/">Belleza</a></li>
+    </ul>
+
+    <br><br>
+    <!-- Los botones dinámicos del nav deberían quedar sin el subrayado ni el color oscuro y tampoco entiendo qué me salió mal -->
+    <nav>
+      <ul class="list2">
+          <li><a href="#section">Inicio</a></li>
+          <li><a href="Pages/quienes_somos.html">¿Quiénes somos?</a></li> 
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#footer">Nuestras redes</a></li>
+          <!-- Se creó styles dentro de las mismas páginas html nuevas -->
+          <!-- Cada nueva página tiene sus propias notas explicativas -->
+      </ul>
+    </nav>
+
+    <br><br>
+
+    <h1>Bienvenidos a la web de noticias de Alu Domínguez</h1>
+    
+    <br><br>
+
+    <section> 
+      <!-- El texto que acompaña las noticias es el título, hay que entrar para leer la nota completa por eso el boton -->
+      <div class="conteiner">
+        <div class="noticias">
+          <div class="articulo">
+            <img class="art-img" src="Images/ba.png" alt="not1">
+            <br>
+            <p>Presentando los cursos del Gobierno de la Ciudad</p>
+            <br>
+            <button class="btn-art">Leer nota completa</button>
+          </div>
+
+          <div class="articulo">
+            <img class="art-img" src="Images/bam.jpg" alt="not2">
+            <br>
+            <p>La juventud está iniciando su camino</p>
+            <br>
+            <button class="btn-art">Leer nota completa</button>
+          </div>
+
+          <div class="articulo">
+            <img class="art-img" src="Images/bam2.0.jpeg" alt="not3">
+            <br>
+            <p>Continuando el camino para perfeccionarlo</p>
+            <br>
+            <button class="btn-art3">Leer nota completa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br><br><br>
+    
+    <section class="movimiento">
+      <p>noticias en movimiento</p>
+      <!-- Esto también debería ser una línea de noticias en movimiento pero no sé cómo hacerlo -->
+    </section>
+
+    <br><br>
+
+    <section>
+      <div class="conteiner">
+        <div class="noticias">
+          <div class="articulo">
+            <img class="art-img" src="Images/emprende.png" alt="not4">
+            <br>
+            <p>La academia de educación para pymes de BA</p>
+            <br>
+            <button class="btn-art4">Leer nota completa</button>
+          </div>
+
+          <div class="articulo5">
+            <img class="art-img5" src="Images/aalv.jpg" alt="not5">
+            <br>
+            <p>Una agencia que está expandiendo conocimientos</p>
+            <br>
+            <button class="btn-art">Leer nota completa</button>
+          </div>
+
+          <div class="articulo6">
+            <img class="art-img6" src="Images/codo.png" alt="not6">
+            <br>
+            <p>Profundizando conocimientos del mundo IT</p>
+            <br>
+            <button class="btn-art">Leer nota completa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br>
+
+    <form id="contact" class="contact" name="contact" accept-charset="UTF-8" action="https://submit-form.com/eAOVwrP4" method="post">
+      <label class="text-area" for="name">Nombre</label>
+      <input type="text" name="name">
+      <br><br>
+      <label class="text-area" for="surname">Apellido</label>
+      <input type="text" name="surname">
+      <br><br>
+      <label class="text-area" for="mail">Correo</label>
+      <input type="email" name="mail">
+      <br><br>
+      <label class="text-area" for="msg">Mensaje</label>
+      <textarea name="msg" id="msg" cols="20" rows="10"></textarea>
+      <br><br>
+      <input type="submit" class="btn-submit">
+      <input type="reset" class="btn-submit2" value="Borrar datos">
+    </form>
+
+    <br><br>
+
+    <footer id="footer">
+      <ul class="foot">
+        <li><a href="">Fb</a></li>
+        <li><a href="">Ig</a></li>
+        <li><a href="">X</a></li>
+        <li><a href="">Tk</a></li>
+        <li><a href="">Yt</a></li>
+      </ul>
+    </footer>
+
+    <footer>
+      <h3>Copyright &copy;<a href="https://linktr.ee/AluuDominguez">Alu Domínguez</a> Todos los derechos reservados</h3>
+    </footer>
+  </body>
+</html>
