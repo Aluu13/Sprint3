@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Esta página fue creada por separado para no generar confuciones al momento de leer el código-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Contactanos</h1>
+        <p>Escribinxs que te respondemos a la brevedad.</p>
+
+        <div class="formulario">
+            <!--Se enlazó una página externa ue está conectada directamente al mail donde van a llegar toda la información que se cargue al formulario-->
+            <form id="contact" class="contact" name="contact" accept-charset="UTF-8" action="https://submit-form.com/eAOVwrP4" method="post">
+                <label class="text-area" for="name">Nombre</label>
+                <input type="text" name="name">
+                <br><br>
+                <label class="text-area" for="surname">Apellido</label>
+                <input type="text" name="surname">
+                <br><br>
+                <label class="text-area" for="mail">Correo</label>
+                <input type="email" name="mail">
+                <br><br>
+                <label class="text-area" for="msg">Mensaje</label>
+                <textarea name="msg" id="msg" cols="20" rows="10"></textarea>
+                <br><br>
+                <input type="submit" class="btn-submit">
+                <input type="reset" class="btn-submit2" value="Borrar datos">
+            </form>
+        </div>
+
+        <!-- Este style fue creado para no tener que gregar a una nueva página de CSS-->
+        <style>
+            body {background-color: black;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+            h1 {text-align: center;
+                color: white;}
+
+            p {color: #fff;
+                text-align: center;}
+
+            .formulario {margin: 80px 0px 50px 0px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;}
+
+            .contact {margin: 80px 0px 50px 0px;
+            height: 500px;
+            display: flex;
+            justify-content: center;}
+
+            form {width: 500px;
+                    height: 100px;
+                    border-radius: 15px;
+                    background-color: grey;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    padding: 30px;}
+
+            form .text-area {width: 500;
+                            height: 100px;
+                            color: #000;}
+
+            /* Quise poner los botones uno al lado del otro y no me salió, no sé qué hice mal */
+            form .btn-submit {text-align: center;
+                                width: 15%;
+                                height: 50px;
+                                border-radius: 10px;
+                                background-color: whitesmoke;
+                                cursor: pointer;}
+
+            form .btn-submit2 {text-align: center;
+                                width: 30%;
+                                height: 30px;
+                                border-radius: 10px;
+                                background-color: whitesmoke;
+                                cursor: pointer;}
+
+            .btn-submit:hover {color: purple;}
+
+            .btn-submit2:hover {color: purple;}
+
+            label {color: #fff;}
+
+            textarea {vertical-align: top;}
+        </style>
+        
+    </body>
+</html>

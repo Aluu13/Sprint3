@@ -1,174 +1,132 @@
 /* Esta página solo tiene el estilo de la home  */
 /* Cada página que no sea la home tiene su propio estilo interno dentro de si misma */
 
-* {margin: 0px;
-    padding: 0px;}
+#body {background-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;}
 
-body {background-color: black;
-    font-family: Georgia;}
+header {display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;}
 
 img {display: flex;
-    width: 100px;
-    margin-left: 30px;
-    margin-top: 30px;}
+        width: 150px;
+        margin-left: 30px;
+        margin-top: 30px;}
 
-.list {display: flex;
-    margin-top: 0px;
-    margin-left: 30px;
-    justify-content: center;}
+#pestañas ul {display: flex;
+                justify-content: center;}
 
-.list li {margin-right: 30px;
-            list-style: none;
-            color: #fff;}
+#pestañas ul li {margin-left: 30px;
+                list-style: none;}
 
-.list li a {text-decoration: none;
-            cursor: pointer;
-            color: #fff;}
+#pestañas ul li a {text-decoration: none;
+                        cursor: pointer;
+                        color: #fff;}
 
-.list li a:hover {color: purple;}
+#pestañas ul a:hover {color: purple;}
 
-.list2 li {margin-left: 30px;
-            list-style: none;
-            color: #fff;}
+#pestañas ul li:last-child {margin-right: 0%;}
 
-.list2 li a {text-decoration: none;
-            cursor: pointer;}
+.lista {display: flex;
+        justify-content: center;}
 
-.list2 li a:hover {color: purple;}
+.lista li {margin-right: 30px;
+        list-style: none;}
 
-h1 {color: #fff;
-    text-align: center;}
+.lista li a {text-decoration: none;
+                cursor: pointer;
+                color: #fff;}
+
+.lista li a:hover {color: purple;}
+
+.menu-toggle {display: none;
+                cursor: pointer;
+                color: #fff;}
+
+.tituloprincipal {color: white;
+                text-align: center;
+                font-size: 36px;}
+
+.palabradestacada {color: rgb(75, 8, 131);}
 
 .conteiner {display: flex;
-            flex-direction: column;
-            margin-top: 15px;
-            margin-left: 15px;
-            justify-content: space-between;
-            align-items: left;
-            color: #fff;}
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;}
 
 .noticias {display: flex;
-            flex-direction: row;
-            margin-top: 15px;}
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;}
 
-.articulo {text-align: center;
-            margin-left: 10px;
-            width: 150px;
-            height: 150px;
-            background-color: #fff;
-            border-radius: 10;
-            box-shadow: 5px 10px 5px -5px #fff;}
+.articulo {flex: 0 0 calc(33.33% - 10px);
+        text-align: center;
+        padding: 5%;
+        background-color: grey;
+        border-radius: 20px;
+        box-shadow: 5px 5px 2.5px rgb(62, 62, 62);}
 
-.movimiento p {color: #fff;
-                margin-left: 30px;}
+p {color: white;}
 
-.articulo5 {text-align: center;
-            margin-top: 0px;
-            margin-left: 10px;
-            width: 150px;
-            height: 150px;
-            background-color: #fff;
-            border-radius: 10;
-            box-shadow: 5px 10px 5px -5px #fff;}
-
-.articulo6 {text-align: center;
-            margin-top: 0px;
-            margin-left: 10px;
-            width: 150px;
-            height: 150px;
-            background-color: #fff;
-            border-radius: 10;
-            box-shadow: 5px 10px 5px -5px #fff;}
-
-p {color: #000;}
-
-.art-img {width: 100px;}
-
-.art-img5 {width: 80px;}
-
-.art-img6 {width: 80px;}
+.art-img {max-width: 50%;
+        height: 25%;
+        padding: 0%;}
 
 .btn-art {margin-top: 10px;
-        background-color: gray;
+        background-color: white;
         border-radius: 5px;
-        width: 150px;
-        height: 30px;
-        font-weight: 150;
+        padding: 10px 20px;
         cursor: pointer;}
 
-.btn-art3 {margin-top: 20px;
-            background-color: gray;
-            border-radius: 5px;
-            width: 150px;
-            height: 30px;
-            font-weight: 150;
-            cursor: pointer;}
+.btn-art:hover {color: violet;}
 
-.btn-art4 {margin-top: 30px;
-            background-color: gray;
-            border-radius: 5px;
-            width: 150px;
-            height: 30px;
-            font-weight: 150;
-            cursor: pointer;}
+.cambiarcolor:active {background-color: rgb(73, 0, 128);}
 
-.btn-art:hover {color: purple;}
+.parrafoexterior {margin: 10px 0px 10px 30px;
+        text-align: left;
+        font-weight: 10;}
 
-.contact {margin: 80px 0px 50px 0px;
-            height: 500px;
-            display: flex;
-            justify-content: center;}
-
-form {width: 500px;
-        height: 100px;
-        border-radius: 15px;
-        background-color: #fff;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 30px;}
-
-form .text-area {width: 500;
-                height: 100px;
-                color: #000;}
-
-form .btn-submit {width: 50%;
-                    height: 30px;
-                    border-radius: 10px;
-                    background-color: gray;}
-
-form .btn-submit2 {width: 50%;
-                    height: 30px;
-                    border-radius: 10px;
-                    background-color: gray;}
-
-.btn-submit:hover {color: purple;}
-
-.btn-submit2:hover {color: purple;}
-
-label {color: #fff;}
-
-textarea {vertical-align: top;}
-
-footer {color: #fff;}
-
-.foot {margin: 10px 0px 10px 30px;
-    display: flex;
-    justify-content: center;}
-
-.foot li {justify-content: center;
-        list-style: none;
-        margin-right: 30px;
-        font-weight: 300;}
-
-.foot li a {text-decoration: none;
-        cursor: pointer;}
-
-.foot li a:hover {color: purple;}
-
-footer h3 {margin: 10px 0px 10px 30px;
-            text-align: left;
-            font-weight: 10;}
+footer p {margin: 10px 0px 10px 30px;
+        text-align: left;
+        font-weight: 10;
+        color: #fff;}
 
 footer a {text-decoration: none;
-            color: pink;}
+        color: rgb(74, 16, 140);}
+
+/*Abajo de este comentario empieza el CSS de los códigos que se escriben con @*/
+@media screen and (max-width: 768px) 
+{#pestañas {display: none;
+        flex-direction: column;
+        background-color: grey;
+        position: absolute;
+        top: 60px;
+        left: 0%;
+        right: 0%;}
+
+#pestañas.active {display: flex;}
+
+.menu-toggle {display: block;
+                font-size: 24px;
+                margin-right: 20px;
+                color: #fff;}}
+
+@media screen and (min-width: 768px)
+{.tituloprincipal {font-size: 48px;}
+
+.conteiner {display: flex;
+                justify-content: center;}}
+
+@keyframes slideAnimation { 0% {left: 0%;}
+                                100% {left: 100%;}}
+
+.movimiento {color: #fff;
+                margin-left: 30px;
+                margin-right: 30px;
+                position: relative;
+                animation: slideAnimation 5s linear infinite;}
+/*Tuve un problema con el código que está arriba de este comentario. No puedo hacer que no se me salga de la pantalla, revisé todo lo que entendí pero no encuentro el problema*/
